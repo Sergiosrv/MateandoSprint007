@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head',{
+    title : "error 404"
+}) %>
+<body>
+    <main class="main-error-404">
+    <section class="page_404">
+     
+            
+            <h1 class="text-center ">error <%= error.status %></h1>
+          
+            <img src="/images/gif/osito-matero.gif" alt="">
+          </div>
+          
+          
+          <h3 class="h2">
+          toma un mate
+          </h3>
+          
+          <p>mientras tratamos de solucionar este error</p>
+          <h3 class="h2">
+           sigue mirando 
+            </h3>
+       
+          <i class="fa-solid fa-down-long fa-2xl" ></i><i class="fa-solid fa-down-longfa-2xl"></i>
+          <i class="fa-solid fa-down-long fa-2xl" ></i><i class="fa-solid fa-down-longfa-2xl"></i>
+          <i class="fa-solid fa-down-long fa-2xl" ></i><i class="fa-solid fa-down-longfa-2xl"></i>
+          <i class="fa-solid fa-down-long fa-2xl" ></i><i class="fa-solid fa-down-longfa-2xl"></i>
+          <i class="fa-solid fa-down-long fa-2xl" ></i><i class="fa-solid fa-down-longfa-2xl"></i>
+          <br>
+          <a href="/" class="link_404">ir a Home</a>
+        </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+    </main>
+</body>
+</html>

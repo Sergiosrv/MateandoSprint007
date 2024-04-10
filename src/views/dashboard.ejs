@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include('./partials/head', {
+    title : 'Panel de Administración'
+}) %>
+
+<body class="bg-light">
+
+    <%- include('./partials/header-admin') %>
+
+    <main class="container mt-5">
+        <section class="row">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-primary text-white">
+                        <h4 class="m-0">Gestión de Productos</h4>
+                        <a class="btn btn-light" href="/productos/agregar">Nuevo Producto</a>
+                    </div>
+                    
+                    <div class="card-body table-responsive">
+                        <table class="table table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">producto</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                <% products.forEach(({ id, name,typeproducts, description, category, image, price,tamanio,producto,color,brand, quantityInStock,discount }) => { %>
+                                    <tr>
+                                        <th scope="row"><%= id %></th>
+                                        <td><%= name %></td>
+                                        <td><%= description %></td>
+                                        <td>
+                                            <%= typeproducts.name %>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group" role="group">
+                                                <button class="btn btn-outline-primary"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal<%= id %>">
+                                                    <i class="fa-solid fa-eye"></i> Ver
+                                                </button>
+                                                <a class="btn btn-outline-success"
+                                                    href="/productos/editar/<%= id %>"><i
+                                                        class="fa-solid fa-pencil"></i> Editar</a>
+                                                <button class="btn btn-outline-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#warningRemoveModal<%= id %>">
+                                                    <i class="fa-solid fa-trash"></i> Eliminar
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <%- include('./partials/modal-show-product-admin',{ id,
+                                        name, category, image, typeproducts,description,price ,tamanio,color,brand,quantityInStock,discount
+                                        }) %>
+                                    <%- include('./partials/modal-warning-delete-product-admin',{ id, name
+                                        }) %>
+                                <% }) %>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/scripts') %>
+
+</body>
+
+</html>

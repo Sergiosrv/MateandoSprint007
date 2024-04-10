@@ -1,0 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  /* colores*/
+  --grisClaro: #d9e2d5;
+  --blanco: #fff;
+  --verdeOscuro: #3e6765;
+  --verdeDegradado: rgb(170, 197, 160);
+}
+
+
+main{
+      margin-top: 40px;
+      } 

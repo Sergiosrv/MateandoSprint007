@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../partials/head',{
+        
+    }) %>
+
+<body>
+    <%- include('../partials/header') %>
+    <main class="main">
+        <article class="producto__container">
+            <div class="producto__imagen">
+                <img src="/images/productos/<%= products.image %>" alt="Mate Imperial">
+            </div>
+            <div class="info__producto">
+                <h2><%= products.name %></h2>
+                <p>
+                   <%= products.description %>
+               
+                </p>
+                <ul class="list-group list-group-flush bg-transparent">
+                    <li class="list-group-item bg-transparent">Material: <%= products.materials.name %></li>
+                    <li class="list-group-item bg-transparent">Tamaño: <%= products.tamanio %>CM</li>
+                    <li class="list-group-item bg-transparent">Capacidad: <%= products.capabilitie.name %></li>
+                    <li class="list-group-item bg-transparent">Marca: <%= products.brand%></li>
+                   
+                    <li class="list-group-item bg-transparent">Disponible: <%= products.quantityInStock %></li>
+                </ul>
+                
+                <% if (products.discount){ %>
+                    <p >
+                        <span>$<%= toThousand(products.price) %></span>
+                        /
+                        <b><%= products.discount%>% OFF</b>
+                    </p>
+                
+                        <p >
+                            $ <%= toThousand((products.price - (products.price * products.discount) / 100).toFixed(0)) %>
+                        </p>
+                    <% } else{ %>
+                    
+                    <p >
+                        $ <%= products.price %>
+                    </p>
+                    <% } %>
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" value="1" min="1">
+                <button class="agregar__carrito"> <i class="fas fa-shopping-cart"></i></button>
+                <div class="combos_main-section-div-letra">
+                    <h2  href="#" class="buy-now-button">COMPRAR AHORA</h2>
+
+                    <h2 href="#" class="buy-now-button">AGREGAR AL CARRO</h2>
+                </div>
+                <div class="envio__info">
+                    <p>¡Envío gratis para compras mayores a $35.00!</p>
+                    <label for="codigoPostal">Ingresa tu código postal:</label>
+                    <input type="text" id="codigoPostal" placeholder="Ej. 12345">
+                    <button class="calcular__envio-botton">Calcular</button>
+                </div>
+            </div>
+          
+    
+        </article>
+
+        
+        
+    </main>
+    
+    <%- include('../partials/footer') %>
+
+</body>
+</html>

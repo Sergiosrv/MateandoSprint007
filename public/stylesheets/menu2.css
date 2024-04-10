@@ -1,0 +1,45 @@
+
+.menu-3-armatuequipo{
+    display: none;
+}
+
+
+@media(min-width:415px) {
+    
+.menu-3-armatuequipo{
+    margin: 10px;
+    border: solid 1px var(--verdeOscuro);
+    background-color: var(--verdeOscuro);
+    width: 25%;
+    max-width:200px ;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    
+
+}
+.menu-3-armatuequipo-article{
+    max-width: 200px;
+    margin: 10px;
+ 
+    width: 30%;
+    
+ 
+}
+.letra-menu2-h1{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffff;
+    margin: 0px
+
+}
+.letra-menu2-p{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffff;
+    margin: 0px;
+    padding: 0px;
+    
+}
+}

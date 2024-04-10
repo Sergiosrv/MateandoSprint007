@@ -1,0 +1,166 @@
+/* Estilos generales */
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nav {
+  margin-top: 20px;
+  font-size: 24px; /* Aumentamos el tamaño de la fuente del nav */
+  color: #333; /* Color de fuente más oscuro */
+}
+
+/* Estilos para el menú de navegación */
+.nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.nav__links li {
+  margin-right: 40px; /* Aumentamos el espaciado entre los elementos */
+}
+
+.nav__links a {
+  font-size: 20px;
+  color: #000; /* Cambiamos el color de los enlaces a negro */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Agregamos una transición al color de los enlaces */
+}
+
+.nav__links a:hover {
+  color: #28a745; /* Cambiamos el color al pasar el mouse por encima */
+}
+
+/* Estilos para el logo */
+.logo {
+  margin-right: 40px; /* Aumentamos el margen derecho del logo para separarlo más */
+}
+.logo img {
+  width: 250px; /* Aumentamos el ancho del logo */
+}
+
+/* Estilos para el campo de búsqueda */
+.buscador__nav {
+  display: inline-block;
+  margin-right: 20px; /* Ajustamos el margen entre el logo y el input de búsqueda */
+  text-align: center; /* Centramos horizontalmente el contenido */
+}
+
+.buscar__header {
+  width: 40px; /* Ajustamos el ancho del campo de búsqueda */
+  height: 40px; /* Hacemos el campo de búsqueda cuadrado */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 50%; /* Hacemos el borde circular */
+  margin-right: 10px;
+  transition: border-color 0.3s ease; /* Agregamos una transición al color del borde */
+}
+
+.buscar__header:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px #66afe9;
+}
+/* Estilos para el icono de búsqueda */
+.buscar__header i {
+  font-size: 20px; /* Ajustamos el tamaño del icono */
+  color: #555; /* Cambiamos el color del icono */
+}
+.buscar__header i:hover {
+  font-size: 20px; /* Ajustamos el tamaño del icono */
+  color: #fff; /* Cambiamos el color del icono */
+}
+
+.btn-outline-success {
+  border-color: #28a745;
+  color: #3e6765;
+}
+
+.btn-outline-success:hover {
+  background-color: #3e6765;
+}
+
+/* Estilos para el menú desplegable */
+.icons__container {
+  display: inline-block;
+  position: relative;
+  margin-left: 20px; /* Aumentamos el margen entre el icono del sitio y el menú desplegable */
+}
+
+.icons__container .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+
+.icons__container .dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.icons__container .dropdown-menu li:hover {
+  background-color: #f8f9fa;
+}
+
+.icons__container:hover .dropdown-menu {
+  display: block;
+}
+
+/* Estilos para los iconos de usuario y carrito de compras */
+.icons__container .list-inline-item {
+  margin-right: 10px; /* Ajustamos el margen entre los iconos */
+}
+
+.icons__container .list-inline-item i {
+  font-size: 24px; /* Ajustamos el tamaño de los iconos */
+  color: #333; /* Cambiamos el color de los iconos */
+  transition: color 0.3s ease; /* Agregamos una transición al color de los iconos */
+}
+
+.icons__container .list-inline-item a:hover i {
+  color: #3e6765; /* Cambiamos el color al pasar el mouse por encima */
+}
+
+/* Media query para mostrar el icono del menú desplegable en pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .abrir-menu {
+    display: block;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    display: none;
+  }
+
+  .abrir-menu:checked + .nav__links {
+    display: block;
+  }
+}

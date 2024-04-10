@@ -1,0 +1,25 @@
+/* Importar Bootstrap */
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300;1,400&family=Dongle:wght@300;400&family=Fenix&family=Inter:wght@300;400;700&display=swap");
+@import "./normalize.css";
+@import "./error.css";
+@import "./general.css";
+@import "./header.css";
+@import "./home.css";
+@import "./register.css";
+@import "./form.css";
+@import "./footer.css";
+@import "./productCart.css";
+@import "./super_combos.css";
+@import "./termos.css";
+@import "./productCart.css";
+@import "./detail.css";
+@import "./matetips.css";
+@import "./banner.css";
+@import "./tuequipo.css";
+@import "./menu2.css";
+
+
+
+

@@ -1,0 +1,27 @@
+.matetips_main{
+    padding-bottom: 50px;
+}
+.matetips_main-h1{
+font-size: 40px;
+text-align: center;
+}
+.matetips_main-p{
+    padding-left: 10px;
+    font-size: 15px;
+}
+.matetips_main-h4{
+    text-align: center;
+    font-size: 25px;
+}
+.matetips_main-ul{
+padding-left: 30px;
+list-style: none;
+}
+.matetips_main-li{
+    color: black;
+    font-size: 23px;
+}
+.matetips_main-ul-p{
+    font-size: 15px;
+
+}

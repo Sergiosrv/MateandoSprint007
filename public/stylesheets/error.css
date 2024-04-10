@@ -1,0 +1,62 @@
+
+.page_404 {
+
+  padding: 0px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page_404 img {
+  width:50%;
+  height: 300px;
+}
+.page_404 p{
+  margin: 15px;
+}
+
+.four_zero_four_bg {
+
+  background-image: url();
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.fa-down-long{
+  color: blue;
+  margin: 20px;
+
+}
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: var(--verdeOscuro);
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.contant_box_404 {
+/* margin-top: -50px;*/
+ 
+  margin-top: 30px;
+}
+.text-center{
+  margin-top: 0px;
+}
+
+@media (min-width: 900px) {
+.main-error-404{
+  margin: 0px;
+}
+}

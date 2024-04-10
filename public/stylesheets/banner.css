@@ -1,0 +1,9 @@
+/* Estilos para el video del banner */
+.video-fluid {
+  width: 100%;
+  height: auto;
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+}

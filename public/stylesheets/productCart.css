@@ -1,0 +1,189 @@
+.productcart__main {
+    width: 100%;
+
+}
+
+.productcart__main {
+
+    font-family: "Comic+Neue";
+    text-transform: uppercase;
+}
+
+.productcart__main {
+    margin-bottom: 15px;
+    display: grid;
+    place-items: center;
+}
+
+.section__main {
+    width: 90%;
+margin-top: 5px;
+}
+
+.productcart__article {
+    width: 100%;
+    margin-top: 15px;
+    display: grid;
+    place-items: center;
+   
+    background-color: var(--grisClaro);
+    border: solid 1px rgb(255, 251, 251);
+ 
+}
+
+.article__individual {
+    width: 100%;
+    padding-left: 15px;
+    text-align: center;
+   
+}
+
+.article__individual p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.article__titulo-car{
+    margin-top: 5px ;
+}
+
+.article__img {
+    width: 100%;
+ padding-top: 20px;
+}
+
+.article__description {
+    font-size: 16px;
+    width: 100%;
+}
+
+.article__aviable {
+    font-size: 13px;
+    width: 40%;
+    color: green;
+    padding: 15px;
+}
+
+.article__price {
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.article__color {
+    padding: 15px;
+    font-size: 10px;
+    width: 40%;
+}
+
+.article__img__box {
+    width: 50%;
+   
+}
+
+.div_color_carrito {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.article__borrar {
+ padding: 0 10px 0 10px  ;
+
+}
+
+.article__duplicar {
+    margin-top: 5px;
+}
+.article__numero{
+    padding: 0 10px 0 10px  ; 
+}
+
+.article__relative  {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.article__individual2{
+    display: grid;
+    place-items: center; 
+}
+.button-pagar{
+    text-align: center;
+  width: 70%;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+  background-color: var(--verdeOscuro);
+  color: white;
+  border-radius: 5px;
+}
+
+/*tablet*/
+@media(min-width: 428px) {
+    .productcart__article{
+         display: flex;
+        flex-direction: row;
+        
+    }
+    .article__img__box{
+        width: 30%;
+    }
+    .article__individual{
+    width: 35%;
+   
+
+    }
+    .article__individual2{
+        width: 30%
+        }
+    .article__description {
+        font-size: 20px !important;
+    }
+
+    .article__aviable {
+        font-size: 20px !important;
+        display: inline;
+    }
+
+    .article__price {
+        font-size:20px !important;
+
+    }
+
+    .article__color {
+        font-size: 20px !important;
+
+    }
+
+    .div_color_carrito {
+        display: inline;
+    }
+.article__img{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.article__price{
+    text-align: center;
+}
+.button-pagar{
+    margin-top: 20px;
+       width: 40%;
+   
+      }
+ 
+
+}
+
+@media(min-width: 780px) {
+    .article__aviable{
+        padding-bottom: 50px;
+    }
+   .article__price {
+    padding-top: 50px
+   }
+   .button-pagar{
+ margin-top: 30px;
+    width: 30%;
+
+   }
+}

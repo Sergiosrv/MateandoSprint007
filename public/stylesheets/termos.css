@@ -1,0 +1,223 @@
+.combos_main {
+    max-width: 414px;
+    width: 100%;
+}
+
+
+/*titulo*/
+.combos_productos-titulo {
+    display: grid;
+    place-items: center;
+
+}
+
+.combos_productos-titulo-h1 {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    color: var(--verdeOscuro);
+    border: 3px dashed #3e6765;
+    border-radius: 20px;
+}
+
+/*articulos*/
+.combos_menu_destacados-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+   
+
+}
+
+.combos_main-section-article {
+    width: 100%;
+
+    padding-top: 50px;
+    border: 2px solid grey;
+    margin: 10px
+}
+
+.combos_main-section-article img {
+    width: 200px;
+    height: 240px;
+}
+
+.combos_main-section-div-letra {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-transform: uppercase;
+    padding-left: 10px;
+
+}
+
+.combos_main-section-img-letra-h3 {
+    width: 30%;
+    margin-top: 5px;
+    margin: 5px;
+    font-size: 20px;
+
+}
+
+.combos_main-section-img-letra-h4 {
+    width: 50%;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5px;
+    margin: 5px;
+}
+
+.combos_main-section-img-letra-p {
+    text-align: left;
+    padding-left: 15px;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.fa-filter {
+    color: var(--verdeOscuro);
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+/*atras y siguiente */
+.arma_tu_equipo_atras_sig{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-transform: uppercase;
+
+
+    
+}
+.arma_tu_equipo_atras_sig h1 a{
+    text-decoration:none;
+    color: var(--verdeOscuro);
+}
+.arma_tu_equipo_atras_sig h1 {
+ font-size: 20px;
+}
+.arma_tu_equipo_atras_sig-h1{
+    padding-left: 10%;
+    padding-right: 30%;
+   
+
+
+}
+
+@media(min-width:415px) {
+    .fa-filter {
+        
+        margin-left: 80%;
+       
+    }
+    .combos_main {
+        max-width: 100%x;
+        width: 100%;
+
+    }
+
+
+
+    .combos_productos {
+        width: 80%;
+    }
+
+    .combos_menu_destacados-imagenes {
+       
+        width: 85%;
+        position: relative;
+        padding: 20px 0px 20px 20px;
+        left: 155px;
+        bottom: 400px;
+
+    }
+
+    .combos_main-section-article {
+        width: 30%;
+        margin: 5px
+    }
+
+    .combos_main-section-div-letra {
+        padding-left: 0px;
+    
+    }
+
+    .combos_main-section-img-letra-h3 {
+
+        font-size: 13px;
+        width: 20%;
+    }
+
+    .combos_main-section-img-letra-h4 {
+        width: 30%;
+        font-size: 13px;
+        padding-left: 17px;
+
+    }
+    .combos_productos-titulo-h1 {
+        width: 30%;}
+    .combos_main-section-img-letra-p {
+
+        padding-left: 0px;
+        font-size: 10px;
+
+    }
+
+    .combos_main-section-article img {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        left: 5px;
+        margin: -5px;
+        bottom: 45px;
+    }
+.combos_main-section-img-letra{
+    text-align: center;
+    padding-left: 0px;
+    margin: 5px;
+}
+
+/*letra atras y adelante*/
+.arma_tu_equipo_atras_sig-h1{
+    padding-left: 25%;
+    padding-right: 50%;
+   
+
+
+}
+
+
+}
+
+@media(min-width: 780px) {
+
+
+    .combos_menu_destacados-imagenes-div {
+        bottom: 100px;
+    }
+    .combos_menu_destacados-imagenes {
+       
+        width: 90%;
+        left: 200px;
+    }
+    .combos_main-section-article{
+        width: 23%;
+    }
+
+    .combos_productos-titulo-h1 {
+        width: 25%;
+        
+    }
+    .arma_tu_equipo_atras_sig-h1{
+        padding-left: 20%;
+        padding-right: 65%;
+       
+    
+    
+    }
+    
+    
+}

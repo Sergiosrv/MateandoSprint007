@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<%- include('../partials/head',{
+	title : 'Detalle'
+}) %>
+
+
+<body class="detail">
+	
+	<main class="d-flex flex-column justify-content-between" style="height: 100vh;">
+		<%- include('../partials/header') %>
+
+		<section class="row">
+		<div class="col-12 col-md-10 col-lg-8 mx-auto">
+			<div class="card" style="background-color: rgba(255, 255, 255, 0.5);">
+				<div class="card-body d-flex gap-4">
+					<div>
+						<img src="/images/product/ <%= mainImage || 'default.png' %>" alt="">
+					</div>
+					<div>
+						<h3><%= name %></h3>
+						<hr>
+						
+						<p><%= color %> <%= tamanio %></p>
+						<p><%= description %> </p>
+					</div>
+					
+				</div>
+				
+			</div>
+
+		</div>
+	</section>
+	<%- include('../partials/footer') %>
+
+	</main>
+
+
+</body>
+</html>
